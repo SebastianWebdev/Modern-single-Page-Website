@@ -1,0 +1,20 @@
+.header__text-area {
+    backface-visibility: hidden;
+
+    h2 {
+        font-size: 6rem;
+        text-transform: uppercase;
+        color: white;
+        font-weight: 700;
+        letter-spacing: 30px;
+        animation: movingleft 1.2s ease;
+    }
+
+    h2:nth-last-child(1) {
+        font-size: 2.6rem;
+        letter-spacing: 12px;
+        animation: movingright 1.2s ease;
+        animation-fill-mode: both;
+    }
+
+}

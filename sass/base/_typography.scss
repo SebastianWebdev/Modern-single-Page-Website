@@ -1,0 +1,52 @@
+.sectionTittle__Tittle {
+    font-size: 3rem;
+    background-image: linear-gradient(#7ed56fcc, #28b485cc);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    text-transform: uppercase;
+}
+
+
+.h2__heading--small {
+    margin-bottom: 20px;
+}
+
+.paragraph {
+    font-size: 1.4rem;
+    word-wrap: wrap;
+    word-break: break-all;
+    letter-spacing: 1px;
+    margin-bottom: 25px;
+    font-weight: 300;
+}
+
+.btn--text {
+    color: $primary-color-mid;
+    font-size: 2rem;
+    padding-bottom: 10px;
+    border-bottom: 2px solid $primary-color-mid;
+    cursor: pointer;
+}
+
+.card-icon {
+    font-size: 5rem;
+    background-image: linear-gradient(#7ed56fcc, #28b485cc);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+
+}
+
+.card-text {
+    font-size: 1.5rem;
+    text-align: center;
+    font-weight: 400;
+}
+
+.card-tittle {
+    font-size: 1.8rem;
+    margin-bottom: 15%;
+    text-transform: uppercase;
+    font-weight: 900;
+}

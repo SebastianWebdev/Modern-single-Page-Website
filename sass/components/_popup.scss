@@ -1,0 +1,146 @@
+.pupup__bg {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 200;
+    visibility: hidden;
+
+    .pupup__container {
+        width: 80vw;
+        height: 80vh;
+        background-color: #fff;
+        display: flex;
+        z-index: 201;
+        border-radius: 6px;
+        position: relative;
+        top: 0;
+        left: 0;
+        transform: scale(0);
+        transition: 300ms;
+
+        .popup__button {
+            position: fixed;
+            top: 8%;
+            right: 4%;
+            width: 2vw;
+            height: 2vw;
+            background-color: transparent;
+            border-radius: 50%;
+            text-align: center;
+            line-height: 2vw;
+            color: rgb(145, 145, 145);
+            font-size: 1.8rem;
+            font-weight: 400;
+            cursor: pointer;
+
+            span {
+                display: block;
+                width: 100%;
+                height: 100%;
+            }
+
+        }
+
+        .popup__button:hover {
+            color: #55c57a;
+        }
+
+        .photo {
+            flex-basis: 35%;
+            flex-grow: 1;
+            flex-shrink: 0;
+            border-radius: 3px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+
+            img {
+                width: 90%;
+                margin-left: 0px;
+
+            }
+
+            img:nth-child(1) {
+                padding-top: 3px
+            }
+
+            img:nth-child(2) {
+                padding-bottom: 6px
+            }
+        }
+
+        .items {
+            flex-grow: 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: center;
+
+            .head {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+
+                h2 {
+                    margin-top: 20px;
+                }
+
+                h3 {
+                    font-size: 1.5rem;
+                    margin-top: 40px;
+                }
+            }
+
+            .paragraph__Area {
+                display: flex;
+                text-align: left;
+                text-justify: distribute-all-lines;
+                font-size: 1.4rem;
+                font-weight: 300;
+                padding: 30px;
+                margin-top: -20px;
+
+                p {
+                    padding-right: 15px;
+                    padding-left: 30px;
+                }
+
+                .left__paragraph {
+                    border-right: 2px solid rgba(226, 226, 226, 0.87);
+                }
+            }
+        }
+
+        .section-btn {
+
+            /*transform: translateX(-50%);*/
+            background-color: #55c57a;
+            color: white;
+            margin-top: 0;
+            width: 15vw;
+            animation: none;
+
+
+        }
+
+        .btn::after {
+            background-color: #55c57a;
+            width: 15vw;
+
+        }
+    }
+}
+
+.pupup__bg.click-card-btn {
+    visibility: visible;
+}
+
+.pupup__container.click-card-btn {
+    transform: scale(1)
+}

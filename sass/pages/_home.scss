@@ -1,0 +1,175 @@
+.bg-video {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    video {
+        height: 100%;
+        z-index: -1;
+    }
+}
+
+.video-overlay {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(245, 245, 245, 0.76);
+
+
+    .sectionTittle {
+        padding-top: 0;
+        margin: 20vh 0vh 15vh 0vh;
+    }
+}
+
+.booking {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(to right bottom, #7ed56fcc, #28b485cc);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .booking__conteiner {
+        width: 80%;
+        height: 70%;
+        background-image: linear-gradient(100deg, rgba(255, 255, 255, 0.8)55%, transparent 50%), url(../img/nat-4.jpg);
+        background-size: cover;
+        background-position: bottom;
+        border-radius: 3px;
+
+        .form-conteiner {
+            width: 50%;
+            height: 100%;
+            padding: 1rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+            form {
+                width: 100%;
+                height: 80%;
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                justify-content: flex-start;
+
+                input {
+                    width: 70%;
+                    height: 4rem;
+                    font-size: 1.5rem;
+                    font-family: 'lato';
+                    border: none;
+                    background-color: rgba(255, 255, 255, 0.788);
+                    border-radius: 1px;
+                    padding-left: 1.5rem;
+                    outline: none;
+                    margin-bottom: 15%;
+
+                }
+
+                input:nth-child(1) {
+                    margin-top: 12%;
+                }
+
+                input:focus {
+                    outline: none;
+                    box-shadow: 0 5px 10px rgba(0, 0, 0, .2);
+                    border-bottom: 2px solid $primary-color-mid;
+
+                    &:invalid {
+                        outline: none;
+                        border-bottom: 2px solid orangered;
+                    }
+                }
+
+                label {
+                    font-weight: 700;
+                    font-size: 1.2rem;
+                    margin-top: -7vh;
+                    display: block;
+                    transform: translateY(-50%);
+                    transition: 300ms;
+                }
+
+                input:placeholder-shown+label {
+                    opacity: 0;
+                    visibility: hidden;
+                    transform: translateY(-100%);
+                }
+            }
+
+            .section-btn {
+                position: relative;
+                left: 10%;
+                transform: translateX(-50%);
+                background-color: #55c57a;
+                color: white;
+                margin-top: 0;
+                width: 15vw;
+                animation: none;
+
+
+            }
+
+            .btn::after {
+                background-color: #55c57a;
+                width: 15vw;
+
+            }
+        }
+    }
+}
+
+footer {
+    position: relative;
+    background-color: #333;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+
+
+    .item__box {
+        margin: 50px;
+    }
+
+    .item__box-logo {
+        display: flex;
+        justify-content: center;
+
+        img {
+            width: 50%;
+            height: 50%;
+        }
+    }
+
+    .item__box-links {
+        flex-basis: 40%;
+        display: flex;
+        justify-content: space-between;
+        border-top: 1px solid white;
+        padding-top: 20px;
+
+        a {
+            color: white;
+            font-size: 1.5rem;
+            text-transform: uppercase;
+            margin-left: 20px;
+            font-weight: 300;
+        }
+    }
+}

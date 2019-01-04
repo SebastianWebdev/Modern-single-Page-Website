@@ -1,0 +1,36 @@
+.section {
+    min-height: 100vh;
+    width: 100%;
+    position: relative;
+    top: 0;
+    left: 0;
+    background-color: $bgc-main-color;
+    margin-top: -20vh;
+    padding-bottom: 20vh;
+    margin-bottom: -24vh;
+}
+
+.section-flex--column {
+    position: relative;
+    min-height: 100vh;
+    margin-top: 24vh;
+
+}
+
+.section--higher {
+    margin-top: -24vh;
+
+    .section-btn {
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
+        background-color: #55c57a;
+        color: white;
+    }
+
+    .btn::after {
+        background-color: #55c57a;
+
+
+    }
+}

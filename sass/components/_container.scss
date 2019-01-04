@@ -1,0 +1,218 @@
+.container {
+    margin-top: 20vh;
+    padding: $padding-main;
+    position: relative;
+}
+
+.container1-about {
+    grid-area: conteinerA;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.container2-photos {
+    grid-area: conteinerB;
+}
+
+.card-ds--3col {
+    perspective: 150rem;
+    -moz-perspective: 150rem;
+    flex-basis: 30%;
+    cursor: pointer;
+    position: relative;
+    color: white;
+    font-size: 2rem;
+
+
+
+    .card-side {
+
+        height: 80vh;
+        width: 100%;
+        box-shadow: 0 15px 30px rgba(0, 0, 0, 0.301);
+        transition: 800ms ease;
+        backface-visibility: hidden;
+        border-radius: 3px;
+
+
+        &--front {
+            background-color: white;
+        }
+
+        &--back {
+
+            transform: rotateY(180deg);
+            position: absolute;
+            top: 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            align-items: center;
+
+            &-1 {
+                background-image: linear-gradient(to right bottom, $card-color-orange-light, $card-color-orange-dark);
+            }
+
+            &-2 {
+                background-image: linear-gradient(to right bottom, $primary-color-light, $primary-color-dark);
+            }
+
+            &-3 {
+                background-image: linear-gradient(to right bottom, $card-color-blue-light, $card-color-blue-dark);
+            }
+
+            h3 {
+                font-size: 1.5rem;
+                text-transform: uppercase;
+                font-weight: 500;
+                letter-spacing: 2px;
+                margin-bottom: -25%;
+            }
+
+            h2 {
+                font-weight: 100;
+                font-size: 5.6rem;
+                margin-bottom: -25%;
+            }
+
+            .btn--round {
+                width: 40%;
+
+            }
+
+            .btn::after {
+                width: 100%;
+            }
+
+
+        }
+
+
+
+    }
+
+
+}
+
+/*first card*/
+.card-front-inner-conteiner-picture--1 {
+    height: 40%;
+    background-image: linear-gradient(to right bottom, #ffbb00bd, #ff7830bd), url(../img/nat-5.jpg);
+    background-size: cover;
+    clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
+}
+
+/*first card*/
+.card-front-inner-conteiner-list {
+    height: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.card-list {
+    color: #777;
+    font-size: 1.5rem;
+    border-bottom: 1px solid rgba(231, 231, 231, 0.945);
+    padding-bottom: 5%;
+    font-weight: 400;
+}
+
+.card-list.last {
+    border: none;
+}
+
+/*first card*/
+.dscard1-tittle {
+    position: absolute;
+    top: 20%;
+    right: 5%;
+
+    h2 {
+        background-image: linear-gradient(to right bottom, #ffbb00bd, #ff7830bd);
+        text-align: right;
+        padding: 0 10px;
+        font-weight: 300;
+    }
+
+    .card-tittle-last {
+        width: 120%;
+        position: relative;
+        right: 20%;
+
+
+    }
+}
+
+/*first card*/
+/*second card*/
+.card-front-inner-conteiner-picture--2 {
+    height: 40%;
+    background-image: linear-gradient(to right bottom, #7ed56fcc, #28b485cc), url(../img/nat-6.jpg);
+    background-size: cover;
+    clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
+}
+
+.dscard2-tittle {
+    position: absolute;
+    top: 20%;
+    right: 5%;
+
+    h2 {
+        background-image: linear-gradient(to right bottom, #7ed56fcc, #28b485cc);
+        text-align: right;
+        padding: 0 10px;
+        font-weight: 300;
+    }
+
+    .card-tittle-last {
+        width: 120%;
+        position: relative;
+        right: 20%;
+
+
+    }
+}
+
+/*second card*/
+/*3rd card*/
+.card-front-inner-conteiner-picture--3 {
+    height: 40%;
+    background-image: linear-gradient(to right bottom, #2998ffd0, #5543fad0), url(../img/nat-7.jpg);
+    background-size: cover;
+    clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
+}
+
+.dscard3-tittle {
+    position: absolute;
+    top: 20%;
+    right: 5%;
+
+    h2 {
+        background-image: linear-gradient(to right bottom, #2998ffd0, #5543fad0);
+        text-align: right;
+        padding: 0 10px;
+        font-weight: 300;
+    }
+
+    .card-tittle-last {
+        width: 120%;
+        position: relative;
+        right: 20%;
+
+
+    }
+}
+
+/*3rd card*/
+
+
+.card-ds--3col:hover .card-side--front {
+    transform: rotateY(180deg);
+}
+
+.card-ds--3col:hover .card-side--back {
+    transform: rotateY(0deg);
+}
